@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Software Co. | Build What Others Ignore</title>
+  <meta
+    name="description"
+    content="The Software Co. builds the products everyone else overlooks. Explore our plans, current project status, development phases, and future work."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <a class="brand" href="#top"><img src="logo.svg" alt="The Software Co."></a>
+        <div class="topbar-links">
+          <a href="#plans">Plans</a>
+          <a href="#status">Current Status</a>
+          <a href="#phases">Phases</a>
+          <a href="founder.html">Founder</a>
+          <a href="#future">Future Work</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <section class="hero-copy reveal">
+          <p class="eyebrow">Ignored ideas. Useful software. Honest execution.</p>
+          <h1>We build the things everyone else leaves behind.</h1>
+          <p class="hero-text">
+            The Software Co. exists for software that gets dismissed as too small, too odd,
+            too early, or too inconvenient. If nobody built it, or everybody ignored it,
+            that is exactly where we start.
+          </p>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <strong>7</strong>
+              <span>active products</span>
+            </div>
+            <div class="metric">
+              <strong>1</strong>
+              <span>almost done</span>
+            </div>
+            <div class="metric">
+              <strong>6</strong>
+              <span>in development</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#status">See the build board</a>
+            <a class="button button-secondary" href="#phases">View our process</a>
+          </div>
+        </section>
+
+        <aside class="signal-panel reveal">
+          <div class="signal-header">
+            <span class="signal-title">Build Signal</span>
+            <span class="signal-live">Live</span>
+          </div>
+
+          <div class="signal-body">
+            <div class="signal-block">
+              <p class="signal-label">Principle</p>
+              <p class="signal-value">Build what others ignore.</p>
+            </div>
+            <div class="signal-block">
+              <p class="signal-label">Current focus</p>
+              <p class="signal-value">Overlooked utilities, niche workflows, and useful software with visible progress.</p>
+            </div>
+            <div class="signal-block">
+              <p class="signal-label">Last refresh</p>
+              <p class="signal-value" id="status-date">Updating...</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-strip reveal">
+        <article class="strip-card">
+          <p>Focus</p>
+          <span>We choose software that usually sits in a forgotten backlog instead of a roadmap.</span>
+        </article>
+        <article class="strip-card">
+          <p>Visibility</p>
+          <span>Plans, current work, and future direction stay public so progress always feels real.</span>
+        </article>
+        <article class="strip-card">
+          <p>Outcome</p>
+          <span>Products move from ignored idea to shipped tool through a clear, repeatable process.</span>
+        </article>
+      </div>
+    </header>
+
+    <main>
+      <section class="manifesto reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Why We Exist</p>
+          <h2>Software worth building does not need to be fashionable.</h2>
+        </div>
+        <div class="manifesto-grid">
+          <article class="manifesto-card">
+            <h3>Ignored by everyone</h3>
+            <p>
+              We look for software ideas that are repeatedly postponed, sidelined, or treated as too niche to matter.
+            </p>
+          </article>
+          <article class="manifesto-card">
+            <h3>Built in the open</h3>
+            <p>
+              We keep work visible. Plans are clear, statuses are current, and future work stays grounded in reality.
+            </p>
+          </article>
+          <article class="manifesto-card">
+            <h3>Focused on shipping</h3>
+            <p>
+              We would rather launch something useful in a neglected category than chase trends with no durable value.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="plans reveal" id="plans">
+        <div class="section-heading">
+          <p class="section-kicker">Plans</p>
+          <h2>How we take overlooked ideas and turn them into working products.</h2>
+        </div>
+        <div class="plans-grid">
+          <article class="plan-card">
+            <p class="plan-tier">Scout</p>
+            <h3>Validate the neglected idea.</h3>
+            <p>Research the opportunity, define the gap, and identify the smallest useful version.</p>
+            <ul>
+              <li>Problem discovery</li>
+              <li>Scope definition</li>
+              <li>Feasibility check</li>
+            </ul>
+          </article>
+          <article class="plan-card featured">
+            <p class="plan-tier">Forge</p>
+            <h3>Build the real product.</h3>
+            <p>Design, develop, and move the idea into a product with visible milestones and momentum.</p>
+            <ul>
+              <li>Product design</li>
+              <li>Frontend and backend development</li>
+              <li>Public progress tracking</li>
+            </ul>
+          </article>
+          <article class="plan-card">
+            <p class="plan-tier">Relay</p>
+            <h3>Refine, launch, and improve.</h3>
+            <p>Stabilize releases, respond to real usage, and keep future work connected to outcomes.</p>
+            <ul>
+              <li>Launch support</li>
+              <li>Usage-led iteration</li>
+              <li>Roadmap improvement</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="status reveal" id="status">
+        <div class="section-heading">
+          <p class="section-kicker">Current Status</p>
+          <h2>What we are building now, and where each project stands.</h2>
+        </div>
+
+        <div class="status-layout">
+          <article class="status-board status-card-accent">
+            <div class="status-card-top">
+              <div>
+                <p class="status-label">Project Status</p>
+                <h3>Live build board</h3>
+              </div>
+              <span class="chip chip-active">7 active</span>
+            </div>
+            <p class="board-intro">
+              These are the products currently moving through our build pipeline. The board is designed
+              to stay readable first and polished second.
+            </p>
+
+            <div class="project-table" role="table" aria-label="Project status table">
+              <div class="project-table-head" role="row">
+                <span role="columnheader">Project</span>
+                <span role="columnheader">Category</span>
+                <span role="columnheader">Status</span>
+              </div>
+
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/changa-asta.html">Changa Asta game</a></strong>
+                <span role="cell">Game</span>
+                <span role="cell" class="status-pill status-pill-complete">Complete</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/dot-clock.html">Dot Clock</a></strong>
+                <span role="cell">Utility</span>
+                <span role="cell" class="status-pill status-pill-complete">Complete</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/flap-clock.html">Flap Clock</a></strong>
+                <span role="cell">Utility</span>
+                <span role="cell" class="status-pill">In development</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/jinvani.html">Jinvani</a></strong>
+                <span role="cell">Platform</span>
+                <span role="cell" class="status-pill">In development</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/motion-graphics-generator.html">Motion Graphics Generator</a></strong>
+                <span role="cell">Creative Tool</span>
+                <span role="cell" class="status-pill">In development</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/policydesk-app.html">PolicyDesk App</a></strong>
+                <span role="cell">Workflow App</span>
+                <span role="cell" class="status-pill">In development</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/screenshot-extension.html">Screenshot Extension</a></strong>
+                <span role="cell">Browser Tool</span>
+                <span role="cell" class="status-pill status-pill-warm">Almost done</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/swalekha.html">SwaLekha</a></strong>
+                <span role="cell">Subtitle Generator</span>
+                <span role="cell" class="status-pill">In development</span>
+              </div>
+              <div class="project-row" role="row">
+                <strong role="cell"><a class="project-link" href="projects/windows-file-manager.html">Windows File Manager</a></strong>
+                <span role="cell">Desktop Tool</span>
+                <span role="cell" class="status-pill">In development</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="status-side">
+            <article class="status-card">
+              <div class="status-card-top">
+                <p class="status-label">Current work</p>
+                <span class="chip">Active</span>
+              </div>
+              <ul class="status-list">
+                <li>Building practical software that other teams usually overlook</li>
+                <li>Moving several software tracks in parallel without losing clarity</li>
+                <li>Taking Screenshot Extension toward a release-ready finish</li>
+              </ul>
+            </article>
+
+            <article class="status-card">
+              <div class="status-card-top">
+                <p class="status-label">This cycle</p>
+                <span class="chip">Visible</span>
+              </div>
+              <div class="timeline">
+                <div>
+                  <p>Now</p>
+                  <span>Advance active builds and close gaps in ignored product spaces</span>
+                </div>
+                <div>
+                  <p>Next</p>
+                  <span>Push nearly complete tools toward testing and release</span>
+                </div>
+                <div>
+                  <p>Later</p>
+                  <span>Expand the roadmap with software nobody else wants to start</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="phases reveal" id="phases">
+        <div class="section-heading">
+          <p class="section-kicker">Development Phases</p>
+          <h2>How software moves from ignored idea to finished product.</h2>
+        </div>
+        <div class="phases-grid">
+          <article class="phase-card">
+            <p class="phase-step">Phase 01</p>
+            <h3>Discovery</h3>
+            <p>Find the problem, understand the gap, and decide why the product deserves to exist.</p>
+          </article>
+          <article class="phase-card">
+            <p class="phase-step">Phase 02</p>
+            <h3>Planning</h3>
+            <p>Define features, timeline, and the smallest useful version worth building first.</p>
+          </article>
+          <article class="phase-card">
+            <p class="phase-step">Phase 03</p>
+            <h3>Design</h3>
+            <p>Shape the interface, workflows, and system behavior with clarity and intention.</p>
+          </article>
+          <article class="phase-card">
+            <p class="phase-step">Phase 04</p>
+            <h3>Development</h3>
+            <p>Build the product, connect the logic, and turn the idea into working software.</p>
+          </article>
+          <article class="phase-card">
+            <p class="phase-step">Phase 05</p>
+            <h3>Testing</h3>
+            <p>Check quality, remove rough edges, and make sure the software is stable before release.</p>
+          </article>
+          <article class="phase-card">
+            <p class="phase-step">Phase 06</p>
+            <h3>Launch & Improve</h3>
+            <p>Ship the product, gather feedback, and keep improving it through real-world use.</p>
+          </article>
+        </div>
+
+        <div class="phase-rail">
+          <span>Discovery</span>
+          <span>Planning</span>
+          <span>Design</span>
+          <span>Development</span>
+          <span>Testing</span>
+          <span>Launch & Improve</span>
+        </div>
+      </section>
+
+      <section class="future reveal" id="future">
+        <div class="section-heading">
+          <p class="section-kicker">Future Work</p>
+          <h2>Where the next wave of attention goes.</h2>
+        </div>
+        <div class="future-layout">
+          <article class="future-panel">
+            <h3>Planned next</h3>
+            <ul class="future-list">
+              <li>Launch a public lab for rough but high-utility software concepts</li>
+              <li>Publish clearer delivery checkpoints for each build cycle</li>
+              <li>Create a backlog of problems still waiting for somebody to care</li>
+            </ul>
+          </article>
+          <article class="future-panel future-panel-highlight">
+            <h3>North star</h3>
+            <p>
+              Be the team people think of when an idea has been ignored for too long and still deserves to exist.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+    <footer class="site-footer reveal">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="The Software Co." style="height: 52px; margin-bottom: 20px;">
+          <p>We build the things everyone else leaves behind. Useful software, honest execution.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#status">Current Status</a></li>
+            <li><a href="#phases">Build Phases</a></li>
+            <li><a href="founder.html">The Founder</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://x.com/thesatyamjain" target="_blank">X (Twitter)</a></li>
+            <li><a href="#top">Back to top</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Software Co. Built for the overlooked.</p>
+        <p>Built by <a href="founder.html">Satyam Jain</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

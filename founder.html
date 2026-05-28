@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder | The Software Co.</title>
+  <meta name="description" content="Meet Satyam Jain, the founder of The Software Co. building what others ignore.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .founder-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+      padding: 48px 24px;
+    }
+
+    .founder-info h1 {
+      max-width: none;
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
+    }
+
+    .founder-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .social-card {
+      padding: 18px 22px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(243, 236, 223, 0.08);
+      background: rgba(243, 236, 223, 0.04);
+      backdrop-filter: blur(12px);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-card:hover {
+      background: rgba(243, 236, 223, 0.08);
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .profile-frame {
+      position: relative;
+      border-radius: var(--radius-xl);
+      aspect-ratio: 1/1;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-image-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 5rem;
+      color: var(--bg-deep);
+      font-weight: 700;
+    }
+
+    .founder-manifesto {
+      margin-top: 48px;
+    }
+
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .philosophy-card {
+      padding: 32px;
+      border-radius: var(--radius-xl);
+      background: rgba(243, 236, 223, 0.94);
+      color: var(--text);
+    }
+
+    .philosophy-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.04em;
+    }
+
+    .philosophy-card p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .founder-hero, .philosophy-grid {
+        grid-template-columns: 1fr;
+      }
+      .profile-frame {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="The Software Co."></a>
+      <div class="topbar-links">
+        <a href="index.html#plans">Plans</a>
+        <a href="index.html#status">Current Status</a>
+        <a href="index.html#phases">Phases</a>
+        <a href="founder.html" style="color: var(--text-inverse); background: rgba(243, 236, 223, 0.08);">Founder</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero founder-hero">
+        <div class="founder-info reveal">
+          <p class="eyebrow">The Architect</p>
+          <h1>Satyam Jain</h1>
+          <p class="hero-text">
+            Satyam Jain is the founder of The Software Co., a studio dedicated to rescuing 
+            ignored software ideas and turning them into precision-built tools.
+          </p>
+          
+          <div class="founder-social">
+            <a href="https://x.com/thesatyamjain" target="_blank" class="social-card">
+              <p class="eyebrow" style="margin-bottom: 8px;">X (Twitter)</p>
+              <span style="font-size: 1.2rem; font-weight: 700;">@thesatyamjain</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-frame reveal">
+          <div class="profile-image-placeholder">SJ</div>
+        </div>
+      </section>
+
+      <section class="manifesto founder-manifesto">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Philosophy</p>
+          <h2>Building for the overlooked.</h2>
+        </div>
+        
+        <div class="philosophy-grid reveal">
+          <div class="philosophy-card">
+            <h3>Ignore the trend.</h3>
+            <p>
+              Software today follows fashion more than utility. We focus on the gaps—the tools 
+              that people actually need but that don't fit into a venture capital slide deck.
+            </p>
+          </div>
+          <div class="philosophy-card">
+            <h3>Ship with proof.</h3>
+            <p>
+              Everything we build is developed in the open. No secret roadmaps. No hidden agendas. 
+              The progress you see on the build board is the reality of the software we ship.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="future reveal">
+        <div class="future-panel future-panel-highlight">
+          <h3>Let's talk.</h3>
+          <p style="margin-bottom: 24px;">Interested in an overlooked tool or have an idea that's been ignored for too long? Reach out.</p>
+          <a class="button button-primary" href="https://x.com/thesatyamjain" target="_blank">Message on X</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+    <footer class="site-footer reveal">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="The Software Co." style="height: 52px; margin-bottom: 20px;">
+          <p>We build the things everyone else leaves behind. Useful software, honest execution.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#plans">Plans</a></li>
+            <li><a href="index.html#status">Current Status</a></li>
+            <li><a href="index.html#phases">Build Phases</a></li>
+            <li><a href="founder.html">The Founder</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://x.com/thesatyamjain" target="_blank">X (Twitter)</a></li>
+            <li><a href="#top">Back to top</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 The Software Co. Built for the overlooked.</p>
+        <p>Built by <a href="founder.html">Satyam Jain</a></p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
